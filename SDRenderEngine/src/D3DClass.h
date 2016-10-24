@@ -21,13 +21,13 @@ public:
 
   void shutDown( );
 
-  void beginScene( const float red, const float green, const float blue );
+  void beginScene( const float red, const float green, const float blue, const float alpha );
   void endScene( );
 
   ID3D11Device *getDevice( );
   ID3D11DeviceContext *getDeviceContext( );
 
-  void getProjectionmatrix( XMMATRIX& );
+  void getProjectionmatrix( XMMATRIX& projectionMatrix );
   void getWorldMain( XMMATRIX& );
   void getOrthoMatrix( XMMATRIX& );
 
@@ -46,8 +46,11 @@ private:
   ID3D11DepthStencilView *m_depthStencilView;
   ID3D11RasterizerState *m_rasterState;
   XMMATRIX m_projectionMatrix;
-  XMMATRIX m_worlMatrix;
+  XMMATRIX m_worldMatrix;
   XMMATRIX m_orthomatrix;
+  UINT m_refreshRateNumerator;
+  UINT m_refreshRateDenominator;
+  bool m_enableMSAA4xQuality;
 };
 #endif
 

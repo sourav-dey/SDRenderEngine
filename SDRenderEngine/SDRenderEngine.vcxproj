@@ -142,6 +142,7 @@
     <ClCompile Include="src\GraphicsClass.cpp" />
     <ClCompile Include="src\InputClass.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\ModelClass.cpp" />
     <ClCompile Include="src\SystemClass.cpp" />
     <ClCompile Include="src\Utilities.cpp" />
   </ItemGroup>
@@ -149,8 +150,13 @@
     <ClInclude Include="src\D3DClass.h" />
     <ClInclude Include="src\GraphicsClass.h" />
     <ClInclude Include="src\InputClass.h" />
+    <ClInclude Include="src\ModelClass.h" />
     <ClInclude Include="src\SystemClass.h" />
     <ClInclude Include="src\Utilities.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\Shaders\color.ps" />
+    <None Include="src\Shaders\Color.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

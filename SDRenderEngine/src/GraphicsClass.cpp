@@ -51,7 +51,7 @@ bool GraphicsClass::frame()
 
 bool GraphicsClass::render()
 {
-  m_d3d->beginScene( 0.5f, 0.5f, 0.5f );
+  m_d3d->beginScene( 0.5f, 0.5f, 0.5f, 0.5f );
   m_d3d->endScene( );
 
   return true;
