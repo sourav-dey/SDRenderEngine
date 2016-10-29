@@ -138,6 +138,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\ColorShaderClass.cpp" />
     <ClCompile Include="src\D3DClass.cpp" />
     <ClCompile Include="src\GraphicsClass.cpp" />
     <ClCompile Include="src\InputClass.cpp" />
@@ -147,6 +148,7 @@
     <ClCompile Include="src\Utilities.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\ColorShaderClass.h" />
     <ClInclude Include="src\D3DClass.h" />
     <ClInclude Include="src\GraphicsClass.h" />
     <ClInclude Include="src\InputClass.h" />

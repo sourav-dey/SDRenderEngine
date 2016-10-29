@@ -4,6 +4,7 @@
 
 #include <d3d11.h>
 #include <D3DX10math.h>
+#include "Utilities.h"
 
 class ModelClass
 {
@@ -31,6 +32,8 @@ private:
   bool initializeBuffers( ID3D11Device *device );
   void shutdownBuffers( );
   void renderBuffers( ID3D11DeviceContext *deviceContext );
+
+  Utilities ut;
 
 };
 #endif
